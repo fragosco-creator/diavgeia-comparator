@@ -58,7 +58,7 @@ def fetch_diavgeia_data(org_name, year_val):
         else:
             return {"Φορέας": org_name, "Συνολικό Ποσό (€)": 0.0, "Αριθμός Δαπανών": 0}
     except Exception as e:
-        st.error(An error occurred for {org_name}: {e})
+        st.error(f΄΄An error occurred for {org_name}: {e}΄΄)
         return {"Φορέας": org_name, "Συνολικό Ποσό (€)": 0.0, "Αριθμός Δαπανών": 0}
 
 # Κουμπί εκτέλεσης ανάλυσης
