@@ -12,7 +12,7 @@ st.markdown("Συγκρίνετε τις συνολικές δαπάνες δι�
 st.sidebar.header("Παράμετροι Αναζήτησης")
 
 # Εισαγωγή ονομάτων φορέων (χωρισμένα με κόμμα)
-default_orgs = "ΥΠΟΥΡΓΕΙΟ ΥΓΕΙΑΣ, ΥΠΟΥΡΓΕΙΟ ΠΑΙΔΕΙΑΣ, ΘΡΗΣΚΕΥΜΑΤΩΝ ΚAI ΑΘΛΗΤΙΣΜΟΥ"
+default_orgs = ["Δήμος Αθηναίων", "Δήμος Θεσσαλονίκης", "Δήμος Πατρέων"]
 orgs_input = st.sidebar.text_area("Φορείς (χωρισμένοι με κόμμα)", default_orgs)
 orgs_list = [org.strip() for org in orgs_input.split(",") if org.strip()]
 
